@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "838480882984",
+    "project_id": "eveky-c2320",
+    "storage_bucket": "eveky-c2320.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838480882984:android:6bf9111e0827f11e4f741d",
+        "android_client_info": {
+          "package_name": "android.com.itik.eveky"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAByoX2_vo8Sj6t1s61dBE8h5Kagj6U7Rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

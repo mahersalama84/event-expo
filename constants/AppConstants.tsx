@@ -1,0 +1,68 @@
+import { Platform, StatusBar } from "react-native";
+import { ScreenHeight, ScreenWidth } from "react-native-elements/dist/helpers";
+import Sizes from "./Sizes";
+
+const AppConstants: any = {
+  MEASURING_UNIT: 10,
+  TAB_BAR_HEIGHT: ScreenHeight * 0.065,
+  TOP_OF_SCREEN: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+  WINDOW_WIDTH: ScreenWidth,
+  WINDOW_HEIGHT: ScreenHeight,
+
+  SPLASH_SCREEN_IMAGE_WIDTH: 150,
+  SPLASH_SCREEN_IMAGE_HEIGHT: 50,
+
+  MY_OCCASION_OPTIONS_MODAL_HEIGHT: ScreenHeight / 1.6,
+  OTHER_OCCASION_OPTIONS_MODAL_HEIGHT: ScreenHeight / 2.2,
+  OCCASION_FORM_MODAL_HEIGHT: ScreenHeight / 1.5,
+  WISH_FORM_MODAL_HEIGHT: ScreenHeight / 1.7,
+  ATTENDE_MODAL_HEIGHT: ScreenHeight / 1.4,
+  BOOK_WISH_MODAL_HEIGHT: ScreenHeight / 2.2,
+  UNBOOK_WISH_MODAL_HEIGHT: ScreenHeight / 3,
+  FRIEND_MODAL_HEIGHT: ScreenHeight / 2.2,
+  MOBILE_PREFIX_MODAL_HEIGHT: ScreenHeight / 2.4,
+  API_VERSION_1: "v1",
+  API_VERSION_2: "v2",
+  PER_PAGE: 10,
+
+  HEADER_EXPANDED_HEIGHT:
+    Platform.OS === "android"
+      ? StatusBar.currentHeight * 4 + Sizes.icon.size.xl
+      : 0 + Sizes.icon.size.xl,
+  HEADER_COLLAPSED_HEIGHT: 100,
+
+  SCROLL_THRESHOLD: ScreenWidth / 5.5,
+
+  LAYER_BACK: 100,
+  LAYER_MIDDLE: 101,
+  LAYER_TOP: 102,
+
+  Customer_OPTIONS_MODAL_HEIGHT: ScreenHeight / 3,
+
+  OCCASION_ITEM_HEIGHT: 75,
+  ATTENDE_ITEM_HEIGHT: 100,
+  FOLLOWER_ITEM_HEIGHT: 100,
+  FOLLOWING_ITEM_HEIGHT: 100,
+  OTHER_OCCASION_ITEM_HEIGHT: 110,
+  MY_OCCASION_ITEM_HEIGHT: 110,
+  CUSTOMER_ITEM_HEIGHT: 75,
+  FOLLOWINGS_OCCASION_ITEM_WIDTH: 150,
+  FOLLOWINGS_OCCASION_ITEM_HEIGHT: 215,
+
+  SMALL_CHIP_WIDTH: 45,
+  SMALL_CHIP_HEIGHT: 20,
+
+  MEDIUM_CHIP_WIDTH: 100,
+  MEDIUM_CHIP_HEIGHT: 25,
+
+  CONFIRM_DIALOG_BUTTON_WIDTH: 100,
+
+  SHADOW_WIDTH: 5,
+
+  LARGE_FLAG_IMAGE_WIDTH: 50,
+  LARGE_FLAG_IMAGE_HEIGHT: 30,
+  SMALL_FLAG_IMAGE_WIDTH: 35,
+  SMALL_FLAG_IMAGE_HEIGHT: 20,
+};
+
+export default AppConstants;
